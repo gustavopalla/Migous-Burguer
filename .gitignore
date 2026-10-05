@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw 4K source footage (the web-ready loop lives in public/video)
+Smoke_*.mp4

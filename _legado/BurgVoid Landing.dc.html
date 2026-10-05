@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FAF5EC;color:#1B1C1E;font-family:'Plus Jakarta Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#1B1C1E;text-decoration:none}
+a:hover{color:#F38307}
+:focus-visible{outline:2px solid #F38307;outline-offset:2px}
+summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+</style>
+</helmet>
+
+<div style="background:#FAF5EC;min-height:100vh;overflow:hidden">
+
+  <header style="max-width:1200px;margin:0 auto;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;position:relative;z-index:2">
+    <a href="#" style="display:flex;align-items:center;gap:10px">
+      <span style="width:34px;height:34px;border-radius:9999px;background:#F38307;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;color:#12202E;font-size:20px;line-height:1">B</span>
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:0.02em;color:#12202E;line-height:1">BurgVoid</span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:32px;font-size:14px;font-weight:700;letter-spacing:0.02em;flex-wrap:wrap">
+      <a href="#" style="color:#F38307">Início</a>
+      <a href="#menu">Cardápio</a>
+      <a href="#combos">Combos</a>
+      <a href="#local">Onde estamos</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <a href="#" style="background:#12202E;color:#FFFFFF;font-weight:700;font-size:13px;letter-spacing:0.02em;padding:0 24px;height:44px;display:flex;align-items:center;border-radius:9999px;white-space:nowrap;flex:none" style-hover="background:#0B1520;color:#FFFFFF">Pedir agora</a>
+  </header>
+
+  <section style="max-width:1200px;margin:0 auto;padding:40px 24px 72px;overflow:hidden;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:48px;align-items:center;position:relative">
+    <div style="position:relative;z-index:2;display:flex;flex-direction:column;gap:24px">
+      <span style="color:#F38307;font-weight:800;font-size:13px;letter-spacing:0.2em;text-transform:uppercase">— Smash burgers artesanais —</span>
+      <h1 style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(56px,8vw,96px);line-height:0.95;letter-spacing:0.02em;color:#1B1C1E;text-wrap:balance">O hambúrguer que <span style="color:#F38307">some</span> do prato em minutos</h1>
+      <p style="margin:0;font-size:16px;font-weight:500;line-height:1.6;color:#52525B;max-width:440px;text-wrap:pretty">Blend de carne fresco moído na casa, pão brioche assado todo dia e queijo derretendo de verdade. Na chapa, na hora.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a href="#menu" style="background:#F38307;color:#FFFFFF;font-weight:800;font-size:14px;letter-spacing:0.02em;height:48px;padding:0 32px;display:flex;align-items:center;border-radius:9999px;white-space:nowrap;flex:none;box-shadow:0 4px 12px rgba(243,131,7,0.25)" style-hover="background:#D87100;color:#FFFFFF">Ver cardápio</a>
+        <a href="#" style="color:#1B1C1E;font-weight:700;font-size:14px;letter-spacing:0.02em;height:48px;padding:0 32px;display:flex;align-items:center;border-radius:9999px;white-space:nowrap;flex:none;border:2px solid #1B1C1E" style-hover="background:rgba(27,28,30,0.05);color:#1B1C1E">Pedir agora</a>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;margin-top:16px;max-width:520px">
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="width:40px;height:40px;flex:none;border-radius:9999px;background:rgba(243,131,7,0.15);display:flex;align-items:center;justify-content:center"><img src="images/icon-fresh.png" alt="" style="width:26px;height:26px;display:block"></div>
+          <div><div style="font-weight:800;font-size:13px;text-transform:uppercase">100%</div><div style="font-size:12px;color:#52525B;line-height:1.3">Ingredientes frescos</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="width:40px;height:40px;flex:none;border-radius:9999px;background:rgba(243,131,7,0.15);display:flex;align-items:center;justify-content:center"><img src="images/icon-delivery.png" alt="" style="width:26px;height:26px;display:block"></div>
+          <div><div style="font-weight:800;font-size:13px;text-transform:uppercase">30 min</div><div style="font-size:12px;color:#52525B;line-height:1.3">Entrega rápida</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="width:40px;height:40px;flex:none;border-radius:9999px;background:rgba(243,131,7,0.15);display:flex;align-items:center;justify-content:center"><img src="images/icon-blend.png" alt="" style="width:26px;height:26px;display:block"></div>
+          <div><div style="font-weight:800;font-size:13px;text-transform:uppercase">180g</div><div style="font-size:12px;color:#52525B;line-height:1.3">Blend da casa</div></div>
+        </div>
+      </div>
+    </div>
+    <div style="position:relative;z-index:1;display:flex;justify-content:center">
+      <sc-if value="{{ showBrush }}" hint-placeholder-val="{{ true }}">
+        <img src="images/brush.png" alt="" style="position:absolute;top:-6%;right:-24%;width:120%;max-width:none;z-index:-1;pointer-events:none">
+      </sc-if>
+      <img src="images/hero-burger.png" alt="Smash burger duplo com cheddar derretido" style="width:100%;max-width:560px;aspect-ratio:1/1;object-fit:contain;display:block;filter:drop-shadow(0 24px 30px rgba(18,32,46,0.22))">
+      <div style="position:absolute;bottom:8%;left:0;background:#FFFFFF;border-radius:16px;padding:14px 18px;box-shadow:0 10px 25px -5px rgba(18,32,46,0.12);display:flex;flex-direction:column;gap:2px">
+        <span style="font-size:12px;color:#52525B">Mais pedido</span>
+        <span style="font-weight:800;font-size:16px;white-space:nowrap">Void Clássico · <span style="color:#F38307">R$ 32,90</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" style="background:#FFFFFF;padding:80px 24px">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span style="color:#F38307;font-weight:800;font-size:12px;letter-spacing:0.2em;text-transform:uppercase">— Destaques —</span>
+          <h2 style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:48px;line-height:1;letter-spacing:0.04em">Cardápio da casa</h2>
+        </div>
+        <a href="#" style="font-weight:700;font-size:14px;border-bottom:2px solid #F38307;padding-bottom:4px">Ver cardápio completo</a>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:20px">
+        <sc-for list="{{ products }}" as="p" hint-placeholder-count="4">
+          <div style="background:#FBF3E8;border-radius:24px;padding:20px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;transition:transform 200ms" style-hover="transform:translateY(-4px)">
+            <img src="{{ p.photo }}" alt="{{ p.name }}" style="width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:16px;display:block;margin-bottom:6px">
+            <h3 style="margin:0;font-weight:800;font-size:18px;line-height:1.25;letter-spacing:-0.01em;text-transform:uppercase">{{ p.name }}</h3>
+            <p style="margin:0;font-size:13px;line-height:1.5;color:#52525B;text-wrap:pretty">{{ p.desc }}</p>
+            <span style="margin-top:auto;padding-top:6px;color:#F38307;font-weight:800;font-size:16px">{{ p.price }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="combos" style="background:#FFFFFF;padding:0 24px 80px">
+    <div style="max-width:1200px;margin:0 auto;background:#12202E;border-radius:24px;padding:clamp(32px,5vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:40px;align-items:center;color:#FFFFFF;position:relative;overflow:hidden">
+      <div style="position:absolute;left:-120px;bottom:-160px;width:360px;height:360px;border-radius:9999px;background:#F38307;opacity:0.12"></div>
+      <div style="position:relative;display:flex;flex-direction:column;gap:16px;max-width:420px">
+        <span style="color:#F38307;font-weight:800;font-size:12px;letter-spacing:0.2em;text-transform:uppercase">— Nossos —</span>
+        <h2 style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(48px,6vw,72px);line-height:0.95;letter-spacing:0.03em;color:#FFFFFF">Melhores combos</h2>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#C9D1DA">Burger + fritas rústicas + bebida. Tudo que você precisa, com até 20% de economia.</p>
+        <div style="display:flex;flex-direction:column;gap:10px;margin:8px 0">
+          <div style="display:flex;justify-content:space-between;gap:16px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.12)"><span style="font-weight:700">Combo Void</span><span style="color:#F38307;font-weight:800">R$ 44,90</span></div>
+          <div style="display:flex;justify-content:space-between;gap:16px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.12)"><span style="font-weight:700">Combo Duplo Smash</span><span style="color:#F38307;font-weight:800">R$ 52,90</span></div>
+          <div style="display:flex;justify-content:space-between;gap:16px"><span style="font-weight:700">Combo Família (4 burgers)</span><span style="color:#F38307;font-weight:800">R$ 149,90</span></div>
+        </div>
+        <div style="display:flex"><a href="#" style="background:#F38307;color:#FFFFFF;font-weight:800;font-size:14px;height:48px;padding:0 32px;display:flex;align-items:center;border-radius:9999px;white-space:nowrap;flex:none" style-hover="background:#D87100;color:#FFFFFF">Pedir combo</a></div>
+      </div>
+      <div style="position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <img src="images/combo.png" alt="Combo com burger, fritas e bebida na tábua" style="grid-column:1 / span 2;width:100%;aspect-ratio:2/1;object-fit:cover;border-radius:16px;display:block">
+        <img src="images/fritas.png" alt="Fritas rústicas com alecrim" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:16px;display:block">
+        <img src="images/bebida.png" alt="Bebida gelada com laranja" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:16px;display:block">
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ showExtras }}" hint-placeholder-val="{{ true }}">
+    <section id="local" style="padding:80px 24px">
+      <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:40px;align-items:stretch">
+        <div style="display:flex;flex-direction:column;gap:28px">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <span style="color:#F38307;font-weight:800;font-size:12px;letter-spacing:0.2em;text-transform:uppercase">— Onde estamos —</span>
+            <h2 style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:48px;line-height:1;letter-spacing:0.04em">Passa aqui, a chapa tá quente</h2>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px">
+            <span style="font-weight:800;font-size:16px">Rua dos Pinheiros, 1240</span>
+            <span style="font-size:14px;color:#52525B">Pinheiros · São Paulo, SP</span>
+          </div>
+          <div style="background:#FFFFFF;border:1px solid #E5E0D8;border-radius:16px;padding:8px 20px">
+            <sc-for list="{{ hours }}" as="h" hint-placeholder-count="4">
+              <div style="display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid #E5E0D8;font-size:14px">
+                <span style="font-weight:700">{{ h.day }}</span>
+                <span style="color:#52525B">{{ h.time }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a href="#" style="background:#12202E;color:#FFFFFF;font-weight:700;font-size:14px;height:48px;padding:0 28px;display:flex;align-items:center;border-radius:9999px;white-space:nowrap;flex:none" style-hover="background:#0B1520;color:#FFFFFF">Como chegar</a>
+            <a href="#" style="color:#1B1C1E;font-weight:700;font-size:14px;height:48px;padding:0 28px;display:flex;align-items:center;border-radius:9999px;white-space:nowrap;flex:none;border:2px solid #E5E0D8" style-hover="border-color:#1B1C1E;color:#1B1C1E">(11) 4002-8922</a>
+          </div>
+        </div>
+        <img src="images/fachada.png" alt="Fachada e salão da hamburgueria" style="width:100%;height:100%;min-height:420px;object-fit:cover;border-radius:24px;display:block;box-shadow:0 10px 25px -5px rgba(18,32,46,0.08)">
+      </div>
+    </section>
+
+    <section id="faq" style="background:#FFFFFF;padding:80px 24px">
+      <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:32px">
+        <div style="display:flex;flex-direction:column;gap:8px;align-items:center;text-align:center">
+          <span style="color:#F38307;font-weight:800;font-size:12px;letter-spacing:0.2em;text-transform:uppercase">— Dúvidas —</span>
+          <h2 style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:48px;line-height:1;letter-spacing:0.04em">Perguntas frequentes</h2>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="5">
+            <details style="background:#FBF3E8;border-radius:16px;padding:0 24px">
+              <summary style="list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:64px;font-weight:800;font-size:16px">
+                <span>{{ f.q }}</span>
+                <span class="faq-plus" style="flex:none;width:32px;height:32px;border-radius:9999px;background:#FFFFFF;color:#F38307;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;transition:transform 200ms">+</span>
+              </summary>
+              <p style="margin:0;padding:0 0 20px;font-size:15px;line-height:1.6;color:#52525B;text-wrap:pretty">{{ f.a }}</p>
+            </details>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <section style="padding:96px 24px;text-align:center">
+    <div style="max-width:720px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:20px">
+      <h2 style="margin:0;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(48px,7vw,80px);line-height:0.95;letter-spacing:0.02em;text-wrap:balance">Bateu a fome? <span style="color:#F38307">A gente resolve.</span></h2>
+      <p style="margin:0;font-size:16px;color:#52525B;line-height:1.6">Peça pelo site e receba quentinho em até 30 minutos.</p>
+      <a href="#" style="background:#F38307;color:#FFFFFF;font-weight:800;font-size:14px;height:52px;padding:0 40px;display:flex;align-items:center;border-radius:9999px;white-space:nowrap;flex:none;box-shadow:0 4px 12px rgba(243,131,7,0.25)" style-hover="background:#D87100;color:#FFFFFF">Fazer meu pedido</a>
+    </div>
+  </section>
+
+  <footer style="background:#12202E;color:#C9D1DA;padding:40px 24px">
+    <div style="max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;font-size:13px">
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:0.02em;color:#FFFFFF">BurgVoid</span>
+      <div style="display:flex;gap:24px;flex-wrap:wrap">
+        <a href="#" style="color:#C9D1DA">Instagram</a>
+        <a href="#" style="color:#C9D1DA">WhatsApp</a>
+        <a href="#" style="color:#C9D1DA">Trabalhe conosco</a>
+      </div>
+      <span>© 2026 BurgVoid</span>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showBrush&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;},&quot;showExtras&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showBrush: this.props.showBrush ?? true,
+      showExtras: this.props.showExtras ?? true,
+      products: [
+        { name: 'Void Clássico', desc: 'Smash 180g, cheddar inglês, picles e molho da casa no brioche.', price: 'R$ 32,90', photo: 'images/void-classico.png' },
+        { name: 'Duplo Smash', desc: 'Dois smashes de 90g, queijo prato duplo e cebola caramelizada.', price: 'R$ 38,90', photo: 'images/duplo-smash.png' },
+        { name: 'Bacon Crunch', desc: 'Blend 180g, bacon crocante, cheddar e maionese defumada.', price: 'R$ 36,90', photo: 'images/bacon-crunch.png' },
+        { name: 'Green Void', desc: 'Burger de grão-de-bico, rúcula, tomate assado e aioli de ervas.', price: 'R$ 34,90', photo: 'images/green-void.png' }
+      ],
+      hours: [
+        { day: 'Segunda', time: 'Fechado' },
+        { day: 'Terça a quinta', time: '18h – 23h' },
+        { day: 'Sexta e sábado', time: '18h – 01h' },
+        { day: 'Domingo', time: '12h – 22h' }
+      ],
+      faqs: [
+        { q: 'Qual a área de entrega?', a: 'Entregamos em um raio de 6 km a partir da loja de Pinheiros. Digite seu CEP no pedido para confirmar.' },
+        { q: 'Vocês têm opções vegetarianas?', a: 'Sim. O Green Void é 100% vegetariano e qualquer burger pode trocar o blend pelo de grão-de-bico.' },
+        { q: 'Posso pedir o ponto da carne?', a: 'Nossos smashes saem ao ponto para bem passado por natureza. O Void Clássico 180g pode ser pedido mal passado.' },
+        { q: 'Quais formas de pagamento aceitam?', a: 'Pix, cartões de crédito e débito e vale-refeição. No salão também aceitamos dinheiro.' },
+        { q: 'Fazem eventos ou pedidos grandes?', a: 'Fazemos. Para pedidos acima de 20 burgers, fale com a gente pelo WhatsApp com 48h de antecedência.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

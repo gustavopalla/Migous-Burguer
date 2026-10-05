@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Migou's palette */
+  --color-brand: #ffd038; /* amarelo ouro */
+  --color-brand-hover: #f8c838;
+  --color-brand-active: #e5b52a;
+  --color-accent: #ff8c42; /* laranja terracota */
+  --color-accent-hover: #f38338;
+  --color-wine: #703838; /* marrom cacau / burgundy do logo */
+  --color-wine-hover: #5e2d2d;
+  --color-ink: #0f1216; /* preto profundo */
+  --color-surface: #16191e;
+  --color-surface-2: #1e232a;
+  --color-fg: #ffffff;
+  --color-muted: #a8aeb8;
+  --color-line: #2a2f37;
+
+  --font-display: var(--font-montserrat), system-ui, sans-serif;
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+
+  --shadow-card: 0 18px 40px -12px rgba(0, 0, 0, 0.6);
+  --shadow-button: 0 6px 18px rgba(255, 208, 56, 0.22);
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --header-h: 84px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-h);
+  }
+
+  body {
+    background: var(--color-ink);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
